@@ -1,51 +1,232 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <title>Mi página de portfolio</title>
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mi página de portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0373eac680.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#sobremi">sobre mi</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li id="hpcentral">{<i class="fa-solid fa-headphones"></i>}</li>
+            <li><a href="#experiencia">skills</a></li>
+            <li><a href="#contactar">contactar</a></li>
+        </ul>
+    </nav>
+    <!-- Fin Menú de navegación -->
+    <article>
         <!-- Bloque de inicio -->
-        <div>
+        <section id="inicio">
             <h2>Luís Martínez</h2>
-            <h3>#programador</h3>
-            <h3>#músico</h3>
-        </div>
+            <h3 class="hastag">#programador</h3>
+            <h3 class="hastag">#músico</h3>
+            <ul id="redes">
+                <li><a href="https://open.spotify.com/" target="_blank"><i class="fa-brands fa-spotify"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i
+                            class="fa-brands fa-square-instagram"></i></a></li>
+            </ul>
+        </section>
         <!-- FIN Bloque de inicio -->
         <!-- Bloque de "Sobre mí" -->
-        <div>
-            <h2>Sobre mí</h2>
-            <img src="./img/FotoPrincipal.PNG" alt="Foto CV" height="200">
-            <p>Lorem <strong>ipsum dolor</strong> sit amet consectetur, <cite>adipisicing elit</cite>. Mollitia unde modi omnis! Excepturi suscipit adipisci alias unde temporibus non distinctio officiis, nemo dignissimos natus sint quisquam sed quidem ipsam cum!</p>
-        </div>
+        <section id="sobremi">
+            <div id="imgsobremi"><img src="./img/FotoPrincipal.PNG" alt="Foto CV" height="200"></div>
+            <div id="bodysobremi">
+                <h2>Sobre mí</h2>
+                <p>Soy <strong>Nicolás Santaella</strong>, graduado en "Administrador de Sistemas Informáticos en Red" y
+                    programador especializado en PL/SQL con conocimientos en Java, desarrollo web básico (HTML, CSS,
+                    JavaScript y PHP) y en la creación de videojuegos con Unity y C#. Me apasiona la programación y me
+                    encanta aprender nuevas tecnologías. Siempre estoy en busca de proyectos desafiantes que me permitan
+                    expandir mis habilidades y conocimientos.
+                    <br>
+                    Además, tengo experiencia en tecnologías Oracle, como Oracle Forms y Reports, y también en Apex, lo
+                    que me ha permitido trabajar en proyectos relacionados con bases de datos, procedimientos
+                    almacenados, triggers y otros aspectos de programación en Oracle.
+                    <br>
+                    Estoy siempre investigando nuevas tecnologías y lenguajes de programación para estar al día y
+                    mejorar mis habilidades.
+                    <br>
+                    En resumen, soy un programador apasionado y curioso con una sólida experiencia en PL/SQL y
+                    conocimientos en otros lenguajes y tecnologías. Siempre busco nuevos proyectos desafiantes que me
+                    permitan seguir aprendiendo y creciendo en el mundo de la programación. Como dijo Albert Einstein:
+                    <cite>"La mente que se abre a una nueva idea jamás volverá a su tamaño original"</cite>.
+                </p>
+                
+                <div class="masinfo"><button type="button">MAS INFO</button></div>
+            </div>
+        </section>
         <!-- FIN Bloque de "Sobre mí" -->
         <!-- Bloque de "Portfolio" -->
-        <div>
+        <section id="portfolio">
             <h2>Portfolio</h2>
             <h3>Una mirada más allá del texto</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="4">Ejemplo portfolio</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>música</td>
-                        <td>producción</td>
-                        <td>web</td>
-                        <td>diseños</td>
-                    </tr>
-                    <tr>
-                        <td>música</td>
-                        <td>producción</td>
-                        <td>web</td>
-                        <td>diseños</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+            <div class="filaportfolio">
+                <div class="card">
+                    <img src="./img/imagen_portfolio.png" alt="Portfolio 1">
+                    <h3>musica</h3>
+                    <h4>concierto benicassim</h4>
+                    <div class="sep"></div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <div class="masinfo"><button type="button">MAS INFO</button></div>
+                </div>
+                <div class="card">
+                    <img src="./img/imagen_portfolio.png" alt="Portfolio 2">
+                    <h3>musica</h3>
+                    <h4>concierto benicassim</h4>
+                    <div class="sep"></div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <div class="masinfo"><button type="button">MAS INFO</button></div>
+                </div>
+                <div class="card">
+                    <img src="./img/imagen_portfolio.png" alt="Portfolio 3">
+                    <h3>musica</h3>
+                    <h4>concierto benicassim</h4>
+                    <div class="sep"></div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <div class="masinfo"><button type="button">MAS INFO</button></div>
+                </div>
+                <div class="card">
+                    <img src="./img/imagen_portfolio.png" alt="Portfolio 4">
+                    <h3>musica</h3>
+                    <h4>concierto benicassim</h4>
+                    <div class="sep"></div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <div class="masinfo"><button type="button">MAS INFO</button></div>
+                </div>
+                <div class="card">
+                    <img src="./img/imagen_portfolio.png" alt="Portfolio 4">
+                    <h3>musica</h3>
+                    <h4>concierto benicassim</h4>
+                    <div class="sep"></div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <div class="masinfo"><button type="button">MAS INFO</button></div>
+                </div>
+                <div class="card">
+                    <img src="./img/imagen_portfolio.png" alt="Portfolio 4">
+                    <h3>musica</h3>
+                    <h4>concierto benicassim</h4>
+                    <div class="sep"></div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <div class="masinfo"><button type="button">MAS INFO</button></div>
+                </div>
+            </div>
+        </section>
         <!-- FIN Bloque de "Portfolio" -->
-    </body>
+        <!-- Bloque de "Skills" -->
+        
+        <section id="experiencia">
+            <h2>Experiencia & Skills</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <div class="gridexp">
+                <div class="cardexp">
+                    <h2>Diseño web</h2>
+                    <h3 class="textoizquierda">2018-2020</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <ul>
+                        <li><img src="./img/tecno_au.png" alt="" height="30px"></li>
+                        <li><img src="./img/tecno_cu.png" alt="" height="30px"></li>
+                        <li><img src="./img/tecno_html.png" alt="" height="30px"></li>
+                    </ul>
+                </div>
+                <div class="cardexp">
+                    <h2>Diseño web</h2>
+                    <h3 class="textoizquierda">2018-2020</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <ul>
+                        <li><img src="./img/tecno_au.png" alt="" height="30px"></li>
+                        <li><img src="./img/tecno_cu.png" alt="" height="30px"></li>
+                        <li><img src="./img/tecno_html.png" alt="" height="30px"></li>
+                    </ul>
+                </div>
+                <div class="cardexp">
+                    <h2>Diseño web</h2>
+                    <h3 class="textoizquierda">2018-2020</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <ul>
+                        <li><img src="./img/tecno_au.png" alt="" height="30px"></li>
+                        <li><img src="./img/tecno_cu.png" alt="" height="30px"></li>
+                        <li><img src="./img/tecno_html.png" alt="" height="30px"></li>
+                    </ul>
+                </div>
+                <div class="cardexp">
+                    <h2>Diseño web</h2>
+                    <h3 class="textoizquierda">2018-2020</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <ul>
+                        <li><img src="./img/tecno_au.png" alt="" height="30px"></li>
+                        <li><img src="./img/tecno_cu.png" alt="" height="30px"></li>
+                        <li><img src="./img/tecno_html.png" alt="" height="30px"></li>
+                    </ul>
+                </div>
+                <div class="cardexp">
+                    <h2>Diseño web</h2>
+                    <h3 class="textoizquierda">2018-2020</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <ul>
+                        <li><img src="./img/tecno_au.png" alt="" height="30px"></li>
+                        <li><img src="./img/tecno_cu.png" alt="" height="30px"></li>
+                        <li><img src="./img/tecno_html.png" alt="" height="30px"></li>
+                    </ul>
+                </div>
+                <div class="cardexp">
+                    <h2>Diseño web</h2>
+                    <h3 class="textoizquierda">2018-2020</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <ul>
+                        <li><img src="./img/tecno_au.png" alt="" height="30px"></li>
+                        <li><img src="./img/tecno_cu.png" alt="" height="30px"></li>
+                        <li><img src="./img/tecno_html.png" alt="" height="30px"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- FIN Bloque de "Skills" -->
+        <!-- Bloque de "Contactar" -->
+        <section id="contactar">
+            <h2>Contacto</h2>
+            <h3>Envíame tus dudas</h3>
+            <form action="#">
+                <div class="itemform">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" minlength="2" maxlength="64" size="32" required>
+                </div>
+                <div class="itemform">
+                    <label for="empresa">Empresa</label>
+                    <input type="text" id="empresa" name="empresa" minlength="2" maxlength="128" size="32">
+                </div>
+                <div class="itemform">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" minlength="8" maxlength="128" size="32" required>
+                </div>
+                <div class="itemform">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="email" name="email" cols="33" rows="5"></textarea>
+                </div>
+                <div class="itemform">
+                    <input type="submit" name="enviar" value="CONTACTAR">
+                </div>
+            </form>
+        </section>
+        <!-- FIN Bloque de "Contactar" -->
+    </article>
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <a href="#inicio"><li id="hpcentral">{<i class="fa-solid fa-headphones"></i>}</li></a>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+        </ul>
+    </footer>
+    <!-- Fin Footer -->
+</body>
+
 </html>
